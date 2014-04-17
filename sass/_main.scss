@@ -211,6 +211,12 @@ header.top-header {
 				}
 			}
 		}
+		:last-child {
+			background: #dd7a27;
+			&:hover {
+				background: #ad4a07;
+			}
+		}
 	}
 }
 
@@ -220,11 +226,10 @@ header.top-header {
 
 
 #main-content {
-	padding: 1em;
+	padding: 4em;
 	border-right: 1px solid #e4e4e4;
-	border-left: 1px solid #e4e4e4;
-	margin-bottom: -99999px;
-	padding-bottom: 99999px;
+	// margin-bottom: -99999px;
+	// padding-bottom: 99999px;
 	h1 {
 		margin-top:0;
 	}
@@ -253,27 +258,35 @@ header.top-header {
 			&:hover {background: $orange darken;}
 		}
 		h2 {
-			background: rgba(0,0,0,.7) ;
 			padding: 10px;
 			color: $orange;
 			text-transform: uppercase;
 			display: inline-block;
-// position: absolute;
-}
-p {
-	background: rgba(0,0,0,.7) ;
-	padding: 10px;
-	color: $white;
-	margin-bottom: 0.4em;
-	font-weight: 500;
-	font-size: 17px;
-}
-
-}
-
-}
-
-.btn.register {
+			// position: absolute;
+		}
+		p {
+			padding: 0 10px;
+			color: $white;
+			margin-bottom: 0.4em;
+			font-weight: 500;
+			font-size: 17px;
+		}
+		.button { 
+			background: #dd7a27; 
+			color:white; 
+			font-weight:bold; 
+			text-shadow: 0 1px 0 black; 
+			margin: 0 0 0.5em 0; 
+			padding:1em 1.5em; 
+			border:0; 
+			display: inline-block;
+			&:hover {
+				background: #ad4a07; 
+				color:white; 
+			}
+		}
+	}
+	
 }
 
 .twitter-header {
@@ -286,11 +299,13 @@ p {
 	.icon-twitter{
 		color: $white;
 		font-size: 24px;
+		display:block;
 	}
 	p {
 		color: $white;
 		font-size: 14px;
 		padding: 0em 1.5em;
+		margin-bottom: 12px;
 		height: 30px !important;
 	}
 }
@@ -309,9 +324,8 @@ p {
 	}
 }
 
+
 // Events
-
-
 
 .event-info {
 	margin: 2em 0em;
@@ -363,6 +377,7 @@ div.css-search input.em-search-geo {
 	margin-right: 1em;
 
 }
+
 
 // Categories
 
@@ -416,8 +431,9 @@ article  {
 
 #sidebar {
 	padding: 1em 20px 1em 0em;
-	margin-bottom: -99999px;
-	padding-bottom: 99999px;
+	margin-top:4em;
+	// margin-bottom: -99999px;
+	// padding-bottom: 99999px;
 	h3 {
 		font-size: 16px;
 		text-transform: uppercase;
@@ -450,6 +466,9 @@ article  {
 			display: block;
 			text-align: right;
 		}
+	}
+	.sidebar-sponsor {
+		margin: 26px 0 26px;
 	}
 }
 
@@ -571,6 +590,7 @@ article  {
 	}
 }
 
+
 .logo {
 	margin: 0em 0em 0em 1em;
 	float: left;
@@ -580,7 +600,7 @@ article  {
 	margin: 1em 1em 1em 0em;
 }
 
-.sponsor-ad { width:540px; float:right; }
+.sponsor-ad { float:right; }
 
 .search-form {
 	margin: 1.5em 0em 0.5em 0em;
@@ -900,6 +920,13 @@ display: none;
 	font-size: 1.5em; 
 	margin:0 0.5em 0.5em 0; 
 }
+footer .social-bar-top li a {
+	color: $orange;
+	&:hover {
+		color:darken($orange,15);
+	}
+}
+
 .hdr-newsletter {
 	font-size:11px; 
 	vertical-align:middle;
@@ -915,11 +942,13 @@ display: none;
 		text-align:center;
 	}
 }
-.social-menu {
-	margin:2em auto .75em; 
+.social-menu ul {
+	width:100%;
+	margin:2em auto .75em;
 }
 .footer-menu {
 	margin:0 auto 2em; 
+	clear:both;
 	&:before {
 		content: "";
 		border-top:1px solid #804708; 
@@ -977,30 +1006,16 @@ display: none;
 	}
 }
 
-.sidebar-signup { 
-	background:#cca; 
-	margin-bottom:2em; 
-	padding:0.1em 0 1em;
-	text-align: left;
-	border-radius:12px; 
-	box-shadow:inset 0 0 75px #7b7b67;
-	h2 {
-		color:white; 
-		text-shadow: 1px 1px 2px black;
-	}
+.sidebar-signup {
 	.text-reader { 
 		height:0; 
 		display: none;
-	}
-	p {
-		text-align: left; 
-		padding-left: 1em;
 	}
 	input[type="text"] { 
 		width:80%; 
 		border-radius:6px; 
 		padding:0.5em 0 0.5em 1em; 
-		margin-bottom:1.5em; 
+		margin-bottom:0.5em; 
 		display:block; 
 	}
 	input[type="submit"], .button { 

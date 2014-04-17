@@ -4,6 +4,11 @@
 
 <aside id="sidebar" class="span4">
 
+	<div class="sidebar-sponsor">
+		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Homepage Sidebar") ) : ?>
+		<?php endif; ?>
+	</div>
+	
 	<?php get_template_part('sidepanel-signup'); ?>
 	
 	<div class="side-icons">

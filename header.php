@@ -13,7 +13,16 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title><?php the_title(); ?> | <?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
+	<title><?php
+	/** Print the <title> tag based on what is being viewed. */
+	global $page, $paged;
+	wp_title( '|', true, 'right' );
+	// Add the blog description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		echo " &ndash; $site_description";
+	?></title>
+	<link rel="icon" type="image/icon" href="http://5peaks.com/favicon.ico">
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<a href="https://plus.google.com/106306951365108050735" rel="publisher" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
