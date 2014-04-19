@@ -10,6 +10,8 @@
 /* @var $args array */
 
 ?>
+<?php the_field('registration_text'); ?>
+
 <div class="em-search-wrapper">
 <div class="em-events-search em-search <?php if( !empty($args['main_classes']) ) echo implode(' ', $args['main_classes']); ?>">
 	<form action="<?php echo !empty($args['search_url']) ? $args['search_url'] : EM_URI; ?>" method="post" class="em-events-search-form em-search-form">

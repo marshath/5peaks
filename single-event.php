@@ -18,33 +18,35 @@ Template Name: Events
 	<h1><?php echo $EM_Event->output('#_EVENTNAME'); ?></h1>
 
 	<div class="event-info">
+
+		
 		<div class="event-featured-img"><?php echo $EM_Event->output('#_EVENTIMAGE'); ?></div>
-
-
-		<p>
-			<?php
-				// register link (ACF)
-			$rl = get_field('registration_link');
 		
-			echo $EM_Event->output(
-			"{is_future}<a class='register-btn' href='{$rl}' target='_blank'><i class='icon-user'></i> <span class='en'>Register Now</span> <span class='fr'>Inscrivez-vous maintenant</span></a>{/is_future}");
-		
-		?>
-		
-			<?php
-			// volunteer link (ACF)
-			$vl = get_field('volunteer_link');
-		
-			echo $EM_Event->output(
-			"{is_future}<a class='volunteer-btn' href='{$vl}' target='_blank'><i class='icon-heart'></i> <span class='en'>Volunteer Now</span> <span class='fr'>Engagez-vous maintenant</span></a>{/is_future}");
-		
-		?>
-		
-		<p>
-			<?php echo $EM_Event->output('{is_past}<h4>This event is over. Check the Race Results link below for information about what happened. Cette manifestation est termin?e. Cliquez sur le lien R?sultats de la course ci-dessous pour plus d\'informations ? propos de ce qui s\'est pass?.</h4>{/is_past}');?>
-		</p>
-
-		</p>
+		<div class="button-container">
+			<p>
+				<?php
+					// register link (ACF)
+					$rl = get_field('registration_link');
+				
+					echo $EM_Event->output(
+					"{is_future}<a class='register-btn' href='{$rl}' target='_blank'><i class='icon-user'></i> <span class='en'>Register Now</span> <span class='fr'>Inscrivez-vous maintenant</span></a>{/is_future}");
+				
+				?>
+				
+					<?php
+					// volunteer link (ACF)
+					$vl = get_field('volunteer_link');
+				
+					echo $EM_Event->output(
+					"{is_future}<a class='volunteer-btn' href='{$vl}' target='_blank'><i class='icon-heart'></i> <span class='en'>Volunteer Now</span> <span class='fr'>Engagez-vous maintenant</span></a>{/is_future}");
+				
+				?>
+	
+			</p>
+			
+			<p>
+				<?php echo $EM_Event->output('{is_past}<h4>This event is over. Check the Race Results link below for information about what happened. Cette manifestation est termin?e. Cliquez sur le lien R?sultats de la course ci-dessous pour plus d\'informations ? propos de ce qui s\'est pass?.</h4>{/is_past}');?>
+			</p>
 		
 	</div>
 

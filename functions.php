@@ -271,4 +271,5 @@ function banner_ad()  {
 
 // Hook into the 'widgets_init' action
 add_action( 'widgets_init', 'banner_ad' );
+
 ?>

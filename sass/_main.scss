@@ -337,6 +337,15 @@ header.top-header {
 		margin: 1em 0em 1em 1em;
 	}
 }
+.event-featured-img {
+	display:block;
+	width:50%;
+	float: right;
+	margin: 0 0 2em 2em;
+	@media screen and (max-width : 979px) {
+		width:100%;
+	}
+}
 
 table.events-table {
 	ul {
@@ -344,13 +353,8 @@ table.events-table {
 		margin:0;
 	}
 }
-.event-featured-img {
-	width:50%;
-	float: left;
-}
 
 .region-event-list {
-	list-style: none;
 	list-style: none;
 	margin:0;
 	li {
@@ -405,10 +409,8 @@ article  {
 	ul {
 		margin:0;
 		list-style: none;
-
 	}
 	li {
-
 		border-bottom: 1px dashed #b2b2b2;
 		a {
 			padding: 0 0 0 0em;
@@ -825,21 +827,50 @@ footer {
 // main-content styles
 
 #main-content {
+	.button-container {
+		width:100%;
+		height:40px;
+		display: block;
+		margin-bottom:20px;
+		@media screen and (max-width : 1200px) {
+			height: 90px
+		}
+		@media screen and (max-width : 979px) {
+			height:40px;
+			clear:both;
+		}
+	}
 	.register-btn {
 		background: lighten($orange, 5%);
+		height: 40px;
+		padding: 0.7em 1em;
+		margin-right:1em;
+		color: $white;
+		float: left;
+		display: inline-block;
+		&:hover { background: $orange; }
+		@media screen and (max-width : 1200px) {
+			float: none;
+			margin-bottom: 8px;
+		}
+		@media screen and (max-width : 979px) {
+			float: left;
+		}
+	}
+	.volunteer-btn {
+		background: lighten(#777765, 5%);
+		height: 40px;
 		padding: 0.7em 1em;
 		color: $white;
 		display: inline-block;
 		float:left;
-		&:hover {background: $orange;}
-	}
-	.volunteer-btn {
-		background: lighten(#777765, 5%);
-		padding: 0.7em 1em;
-		color: $white;
-		display: inline-block;
-		float: right;
 		&:hover {background: #777765;}
+		@media screen and (max-width : 1200px) {
+			float: none;
+		}
+		@media screen and (max-width : 979px) {
+			float: left;
+		}
 	}
 }
 
@@ -897,7 +928,7 @@ display: none;
 }
 .language { 
 	float:right; 
-	color:#333; 
+	color:#666; 
 	font-size:0.75em; 
 	margin-left:0.75em; 
 	width:150px; 
@@ -1013,23 +1044,41 @@ footer .social-bar-top li a {
 	}
 }
 
-/* line 159, ../sass/bootstrap/_tables.scss */
-.table-striped tbody > tr:nth-child(odd) > td,
-.table-striped tbody > tr:nth-child(odd) > th {
-    background-color: #f9f9f9;
+
+
+/* Icons with optional class, or on hover/focus/active states of certain elements */
+[class^="icon-calendar"],
+[class*=" icon-calendar"],
+[class^="icon-user"],
+[class*=" icon-user"],
+[class^="icon-heart"],
+[class*=" icon-heart"], {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url($iconSpritePath);
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  margin-top: 1px;
 }
 
-.table th,
-.table td {
-    padding: 8px 0 0 8px;
-    line-height: 20px;
-    text-align: left;
-    vertical-align: top;
-    border-top: 1px solid #dddddd;
-}
+.icon-calendar { 
+  background-image: url("img/glyphicons-halflings-custom.png");
+  background-position: -192px -120px; }
+.icon-user { 
+  background-image: url("img/glyphicons-halflings-custom.png");
+  background-position: -168px 0; }
+.icon-heart { 
+  background-image: url("img/glyphicons-halflings-custom.png");
+  background-position: -96px  0; }
+
 
 
 .sidebar-signup {
+	text-align: left;
 	.text-reader { 
 		height:0; 
 		display: none;
@@ -1072,8 +1121,8 @@ footer .social-bar-top li a {
 		font-size:1.5em; 
 	}
 }
-.events-hm {
-	border-bottom:2px solid #333;
+.events-hm h1 {
+	border-bottom:2px solid #999;
 }
 .posted-on { 
 	float: left; 
