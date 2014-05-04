@@ -16,7 +16,7 @@ table {
 // BASELINE STYLES
 // ---------------
 
-.table {
+.table, .events-table {
   width: 100%;
   margin-bottom: $baseLineHeight;
   // Cells
@@ -153,7 +153,7 @@ table {
 // --------------
 
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
-.table-striped {
+.table-striped, .tablepress-id-81 {
   tbody {
     > tr:nth-child(odd) > td,
     > tr:nth-child(odd) > th {

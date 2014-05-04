@@ -557,6 +557,9 @@ article  {
 .logo {
 	margin: 0em 0em 0em 1em;
 	float: left;
+	@media screen and (max-width : 767px) {
+		margin-left:0;
+	}
 }
 
 .header-right {
@@ -928,7 +931,7 @@ display: none;
 }
 .language { 
 	float:right; 
-	color:#666; 
+	color:$grayLight; 
 	font-size:0.75em; 
 	margin-left:0.75em; 
 	width:150px; 
@@ -1088,7 +1091,7 @@ footer .social-bar-top li a {
 		border-radius:6px; 
 		padding:0.5em 0 0.5em 1em; 
 		margin-bottom:0.5em; 
-		display:block; 
+		display:block;
 	}
 	input[type="submit"], .button { 
 		background: #dd7a27; 
@@ -1108,7 +1111,7 @@ footer .social-bar-top li a {
 
 
 .sidebar-hm { 
-	padding: 4em 1em 0 3em; 
+	padding: 4em 1em 0 20px; 
 	font-size: 1.1em; 
 	p:first-child { 
 		font-size: 1.2em; 
@@ -1119,6 +1122,10 @@ footer .social-bar-top li a {
 	}
 	h2 { 
 		font-size:1.5em; 
+	}
+	@media screen and (max-width : 979px) {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
 .events-hm h1 {
@@ -1155,7 +1162,12 @@ footer .social-bar-top li a {
 	margin-bottom: 1em; 
 	display: block; 
 }
-
+.events-table tbody {
+    > tr:nth-child(odd) > td,
+    > tr:nth-child(odd) > th {
+      background-color: $tableBackgroundAccent;
+    }
+}
 
 
 .button { 

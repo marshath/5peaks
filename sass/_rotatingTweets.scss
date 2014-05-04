@@ -7,6 +7,7 @@
 div.rotatingtweet {
 	font-size: 100%;
 	word-wrap: break-word;
+	text-align: center;
 }
 /*
 div.rotatingtweets {
@@ -75,6 +76,7 @@ div.rtw_timestamp {
 }
 .rotatingtweet p.rtw_main {
 	clear: both;
+	text-align: center;
 }
 .rtw_wide_block p.rtw_main,div.rtw_main {
 	clear: none;
@@ -97,6 +99,7 @@ div.rtw_timestamp {
 #content .rotatingtweet {
 	padding-top: 0.7em;
 	padding-bottom: 0.7em;
+	text-align: center;
 }
 
 #content p.rtw_main,p.rtw_main,div.rtw_main {
@@ -127,6 +130,12 @@ div.rtw_rt_meta {
 	margin-top: 0.1em;
 	margin-bottom: 0.1em;
 	padding: 0;
+}
+
+div.cycle-slide-active {
+	position: relative !important;
+	top:auto;
+	left:auto;
 }
 
 /* Twitter fonts */

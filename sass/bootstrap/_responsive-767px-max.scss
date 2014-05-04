@@ -21,6 +21,12 @@
   .container-fluid {
     padding: 0;
   }
+  
+
+  .lower-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   // TYPOGRAPHY
   // ----------
@@ -198,11 +204,6 @@
   body {
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .lower-content {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   #submenu {

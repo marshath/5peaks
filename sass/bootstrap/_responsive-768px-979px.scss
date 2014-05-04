@@ -39,9 +39,9 @@ margin: 0px 10px 10px 0px;
 		left: 20px;
 		}
 	.caption-box {
-		top: 55%;
+		top: 30%;
 		left: 20px;
-		max-width: 60%;
+		max-width: 80%;
 		.slide-read-more {
 			background: $orange;			
 			padding: 1em;
@@ -50,23 +50,13 @@ margin: 0px 10px 10px 0px;
 			&:hover {background: $orange darken;}
 		}
 		p {
-			background: rgba(0,0,0,.7) ;
-			padding: 10px;
 			color: $white;
 			margin-bottom: 0.4em;
 			font-weight: 500;
 			font-size: 17px;
 		}
-		
 	}
-
 }
-
-
-
-
-
-
 
 
 
