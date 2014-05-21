@@ -8,6 +8,8 @@ div.rotatingtweet {
 	font-size: 100%;
 	word-wrap: break-word;
 	text-align: center;
+	width:100%; /* might remove */
+	display:block;  /* might remove */
 }
 /*
 div.rotatingtweets {
@@ -132,11 +134,18 @@ div.rtw_rt_meta {
 	padding: 0;
 }
 
-div.cycle-slide-active {
-	position: relative !important;
-	top:auto;
-	left:auto;
+
+/* CUSTOM CSS */
+div.rotatingtweet cycle-slide {
+	top: auto !important;
+	left: auto !important;
 }
+div.rotatingtweet cycle-slide-active {
+	position: relative !important;
+	top: auto !important;
+	left: auto !important;
+}
+
 
 /* Twitter fonts */
 

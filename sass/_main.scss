@@ -299,16 +299,16 @@ header.top-header {
 	.icon-twitter{
 		color: $white;
 		font-size: 24px;
-		display:block;
 	}
 	p {
 		color: $white;
 		font-size: 14px;
 		padding: 0em 1.5em;
-		margin-bottom: 12px;
 		height: 30px !important;
 	}
 }
+
+
 
 .breadcrumbs {
 	padding: 0em 20px;
@@ -968,7 +968,11 @@ footer .social-bar-top li a {
 		color:darken($orange,15);
 	}
 }
-
+// div.rotatingtweet {
+//	font-size: 100%;
+//	word-wrap: break-word;
+//	text-align: center;
+// }
 .hdr-newsletter {
 	font-size:11px; 
 	vertical-align:middle;
@@ -1124,8 +1128,11 @@ footer .social-bar-top li a {
 		font-size:1.5em; 
 	}
 	@media screen and (max-width : 979px) {
-		padding-left: 0px;
 		padding-right: 0px;
+	}
+	@media screen and (max-width : 767px) {
+		padding-right: 0px;
+		padding-left: 0px;
 	}
 }
 .events-hm h1 {
@@ -1183,4 +1190,11 @@ footer .social-bar-top li a {
 		background: #ad4a07; 
 		color:white;
 	}
+}
+
+
+
+.cycle-slide {
+	width: 100%;
+	text-align: center;
 }
