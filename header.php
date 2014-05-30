@@ -33,7 +33,10 @@
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
 	<![endif]-->
 
-	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/chu0ool.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 -->
 
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
@@ -46,23 +49,23 @@
 
 <body <?php body_class(); ?>>
 
-<?php //-- Google Tag Manager -->
-// <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W75JNN"
-// height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-// <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-// new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-// j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-// '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-// })(window,document,'script','dataLayer','GTM-W75JNN');</script>
-// <!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W75JNN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W75JNN');</script>
+<!-- End Google Tag Manager -->
 
 
 
 	<div class="container">
 		<div class="page-wrapper">
 
-			<nav id="mobile-nav">
-				<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>	</nav>
+			<nav id="mobile-nav"><?php wp_nav_menu( array('theme_location' => 'Main Navigation') ); ?>
+					</nav>
 
 				<header class="top-header">
 					<div class="row">
@@ -71,23 +74,23 @@
 
 							<div class="header-top clearfix">
 								 <div class="language">
-								 	<span class="en">Language:</span> <span class="fr">Langue:</span> <?php // echo qtrans_generateLanguageSelectCode('text'); ?>
+								 	<span class="en">Language:</span> <span class="fr">Langue:</span> <?php echo qtrans_generateLanguageSelectCode('text'); ?>
 								 </div>
 								<?php get_template_part('sidepanel-social'); ?>
 							</div>
 
 						</div>
-						
+
 					</div> <!-- header row -->
 					<div class="row" style="padding:0.5em 1em 1.5em;">
-						
+
 						<div class="span4">
 
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo clearfix">
 								<img src="<?php bloginfo('template_url'); ?>/img/logo.jpg" alt="">
 							</a>
 						</div>
-						
+
 						<div class="sponsor-ad">
 							<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Banner Ad')) :
 							endif; ?>
