@@ -173,16 +173,10 @@ Template Name: Events
 
 
 
-				<h4><span class="en">Results:</span> <span class="fr">Resultats:</span></h4>
-
-					<?php if( get_field('race_map_1') ):
-					?><a href="<?php the_field('results_pdf'); ?>" >Race Results</a> (PDF)
-				<?php endif; ?> <br/>
-				<?php if( get_field('race_map_2') ):
-				?><a href="<?php the_field('results_html'); ?>" >Race Results</a> (HTML)
-			<?php endif; ?>
-
-
+				<h4><span class="en">Racer List:</span> <span class="fr">Liste Racer:</span></h4>
+				<?php if( get_field('racer_list') ): ?>
+					<a href="<?php the_field('racer_list'); ?>" target="_blank" >View Racer List</a>
+				<?php endif; ?>
 
 
 
