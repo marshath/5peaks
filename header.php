@@ -72,7 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 							<div class="header-top clearfix">
 								 <div class="language">
-								 	<span class="en">Language:</span> <span class="fr">Langue:</span> <?php echo qtrans_generateLanguageSelectCode('text'); ?>
+								 	<span class="en">Language:</span> <span class="fr">Langue:</span> <?php // echo qtrans_generateLanguageSelectCode('text'); ?>
 								 </div>
 								<?php get_template_part('sidepanel-social'); ?>
 							</div>
