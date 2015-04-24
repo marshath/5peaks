@@ -12,7 +12,7 @@
 	<?php get_template_part('sidepanel-signup'); ?>
 	
 	<div class="side-icons">
-		<h3><span class="en">Follow us on</span><span class="fr">Suivez-nous sur</span></h3>
+		<h3>Follow us on</h3>
 		<?php get_template_part('sidepanel-social'); ?>
 	</div>
 
@@ -34,7 +34,7 @@
 		  </nav>
 	</div> -->
 
-	<h3><span class="en">Latest From The Blog</span><span class="fr">Dernieres nouvelles du Blog</span></h3>
+	<h3>Latest From The Blog</h3>
 
 	<?php 
 

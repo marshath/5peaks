@@ -28,11 +28,6 @@ get_header(); ?>
 	</a>
 </div>
 
-
-
-
-
-
 	<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->

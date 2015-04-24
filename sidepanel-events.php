@@ -6,7 +6,7 @@
 
 
 	<nav>
-		<h3><span class="en">Events in these Regions</span> <span class="fr">Evenements dans ces regions</span></h3>
+		<h3>Events in these Regions</h3>
 
 
 <!-- <ul class="submenu-children">

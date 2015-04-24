@@ -20,7 +20,7 @@
 			        <p><?php the_content(); ?></p>
 		        </div>
 		        
-		        <a href="<?php the_field('slideshow_link'); ?>" class="button"><span class="en"><?php the_field('slideshow_button_en'); ?> </span><span class="fr"><?php the_field('slideshow_button_fr'); ?></span></a>
+		        <a href="<?php the_field('slideshow_link'); ?>" class="button"><?php the_field('slideshow_button_en'); ?></a>
 		        
 	        </div>
 	        
