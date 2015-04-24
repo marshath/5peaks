@@ -29,7 +29,7 @@ Template Name: Events
 					$rl = get_field('registration_link');
 				
 					echo $EM_Event->output(
-					"{is_future}<a class='register-btn' href='{$rl}' target='_blank'><i class='icon-user'></i> <span class='en'>Register Now</span> <span class='fr'>Inscrivez-vous maintenant</span></a>{/is_future}");
+					"{is_future}<a class='register-btn' href='{$rl}' target='_blank'><i class='icon-user'></i> Register Now</a>{/is_future}");
 				
 				?>
 				
@@ -38,86 +38,86 @@ Template Name: Events
 					$vl = get_field('volunteer_link');
 				
 					echo $EM_Event->output(
-					"{is_future}<a class='volunteer-btn' href='{$vl}' target='_blank'><i class='icon-heart'></i> <span class='en'>Volunteer Now</span> <span class='fr'>Engagez-vous maintenant</span></a>{/is_future}");
+					"{is_future}<a class='volunteer-btn' href='{$vl}' target='_blank'><i class='icon-heart'></i> Volunteer Now</a>{/is_future}");
 				
 				?>
 	
 			</p>
 			
 			<p>
-				<?php echo $EM_Event->output('{is_past}<h4>This event is over. Check the Race Results link below for information about what happened. Cette manifestation est termin?e. Cliquez sur le lien R?sultats de la course ci-dessous pour plus d\'informations ? propos de ce qui s\'est pass?.</h4>{/is_past}');?>
+				<?php echo $EM_Event->output('{is_past}<h4>This event is over. Check the Race Results link below for information about what happened.</h4>{/is_past}');?>
 			</p>
 		
 	</div>
 
 
 
-			<h4><span class="en">Description:</span> <span class="fr">Description:</span></h4>
+			<h4>Description:</h4>
 			<?php the_field('notes'); ?>
 
 
 
 
-			<h4><span class="en">When</span> <span class="fr">Quand:</span></h4>
+			<h4>When</h4>
 			<?php echo $EM_Event->output('#_EVENTDATES'); ?>
 
 
 
 
 
-				<h4><span class="en">Directions:</span> <span class="fr">Itineraire:</span></h4>
+				<h4>Directions:</h4>
 				<?php the_field('directions'); ?> <br><?php the_field('directions_map_link'); ?>
 
-				<h4><span class="en">Where:</span> <span class="fr">Instructions:</span></h4>
+				<h4>Where:</h4>
 				<?php echo $EM_Event->output('#_LOCATIONMAP'); ?><br>
 					<?php the_field('location_details'); ?>
 
 
-				<h4><span class="en">Event Schedule:</span> <span class="fr">Dalendrier des evenements:</span></h4>
+				<h4>Event Schedule:</h4>
 				<?php the_field('event_schedule'); ?>
 
 
 
-				<h4><span class="en">Distance &amp; Fees:</span> <span class="fr">Distance et frais:</span></h4>
+				<h4>Distance &amp; Fees:</h4>
 
 					<table>
 <tr>
-							<td><h4><span class="en">Category</span> <span class="fr">Categorie:</span></h4></td>
-							<td><h4><span class="en">Distance</span> <span class="fr">Distance:</span></h4></td>
-							<td><h4><span class="en">Early Bird</span> <span class="fr">Preinscription:</span></h4></td>
-							<td><h4><span class="en">Regular</span> <span class="fr">Ordinaire:</span></h4></td>
-							<td><h4><span class="en">Race Day</span> <span class="fr">Jour de la Race:</span></h4></td>
+							<td><h4>Category</h4></td>
+							<td><h4>Distance</h4></td>
+							<td><h4>Early Bird</h4></td>
+							<td><h4>Regular</h4></td>
+							<td><h4>Race Day</h4></td>
 </tr>
 <tr>
-							<td><span class="en">Childrens Challenge</span> <span class="fr">Defi enfants</span></td>
+							<td>Childrens Challenge</td>
 							<td><?php the_field('childrens_challenge_distance_text'); ?></td>
 							<td><?php the_field('childrens_challenge_early_bird_cost'); ?></td>
 							<td><?php the_field('childrens_challenge_regular_cost'); ?></td>
 							<td><?php the_field('childrens_challenge_race_day_cost'); ?></td>
 </tr>
 <tr>
-							<td><span class="en">Timed Kids Race</span> <span class="fr">Timed enfants Race</span></td>
+							<td>Timed Kids Race</td>
 							<td><?php the_field('timed_kids_race_distance_text'); ?></td>
 							<td><?php the_field('timed_kids_early_bird_cost'); ?></td>
 							<td><?php the_field('timed_kids_regular_cost'); ?></td>
 							<td><?php the_field('timed_kids_race_day_cost'); ?></td>
 </tr>
 <tr>
-							<td><span class="en">Sports Course</span> <span class="fr">Cours de sport</span></td>
+							<td>Sports Course</td>
 							<td><?php the_field('sport_course_distance_text'); ?></td>
 							<td><?php the_field('sport_course_early_bird_cost'); ?></td>
 							<td><?php the_field('sport_course_regular_cost'); ?></td>
 							<td><?php the_field('sport_course_race_day_cost'); ?></td>
 </tr>
 <tr>
-							<td><span class="en">Enduro Course</span> <span class="fr">Course Enduro</span></td>
+							<td>Enduro Course</td>
 							<td><?php the_field('enduro_course_distance_text'); ?></td>
 							<td><?php the_field('enduro_course_early_bird_cost'); ?></td>
 							<td><?php the_field('enduro_course_regular_cost'); ?></td>
 							<td><?php the_field('enduro_course_race_day_cost'); ?></td>
 </tr>
 <tr>
-							<td><span class="en">Half Marathon Course</span> <span class="fr">Demi-cours Marathon</span></td>
+							<td>Half Marathon Course</td>
 							<td><?php the_field('half_marathon_distance_text'); ?></td>
 							<td><?php the_field('half_marathon_early_bird_cost'); ?></td>
 							<td><?php the_field('half_marathon_regular_cost'); ?></td>
@@ -129,58 +129,58 @@ Template Name: Events
 
 
 
-				<h4><span class="en">Terrain:</span> <span class="fr">Plot:</span></h4>
+				<h4>Terrain:</h4>
 				<?php the_field('terrain_text'); ?>
 
 
 
-				<h4><span class="en">Elevation Gain:</span> <span class="fr">Denivele:</span></h4>
+				<h4>Elevation Gain:</h4>
 
-					<h4><span class="en">Half Marathon Course:</span> <span class="fr">Demi-cours Marathon:</span></h4> <?php the_field('half_marathon_elevation_gain_text'); ?>
-					<h4><span class="en">Enduro Course:</span> <span class="fr">Course Enduro:</span></h4> <?php the_field('enduro_elevation_gain_text'); ?>
-					<h4><span class="en">Sport Course:</span> <span class="fr">Cours de sport:</span></h4> <?php the_field('sport_elevation_gain_text'); ?> <br/>
-
-
+					<h4>Half Marathon Course:</h4> <?php the_field('half_marathon_elevation_gain_text'); ?>
+					<h4>Enduro Course:</h4> <?php the_field('enduro_elevation_gain_text'); ?>
+					<h4>Sport Course:</h4> <?php the_field('sport_elevation_gain_text'); ?> <br/>
 
 
-				<h4><span class="en">First Aid &amp; Water Stations:</span> <span class="fr">Secourisme et de l'eau des stations:</span></h4>
+
+
+				<h4>First Aid &amp; Water Stations:</h4>
 				<?php the_field('first_aid_&_water_stations'); ?>
 
 
 
-				<h4><span class="en">Washrooms:</span> <span class="fr">Toilettes:</span></h4>
+				<h4>Washrooms:</h4>
 				<?php the_field('washrooms'); ?>
 
 
 
-				<h4><span class="en">Parking:</span> <span class="fr">Parking:</span></h4>
+				<h4>Parking:</h4>
 				<?php the_field('parking'); ?>
 
 
 
-				<h4><span class="en">Important Notes</span> <span class="fr">Remarques importantes:</span></h4>
+				<h4>Important Notes</h4>
 				<?php the_field('important_notes'); ?>
 
 
 
-				<h4><span class="en">Spectators:</span> <span class="fr">Spectateurs:</span></h4>
+				<h4>Spectators:</h4>
 				<?php the_field('spectators'); ?>
 
 
 
-				<h4><span class="en">Awards &amp; Prizes:</span> <span class="fr">Recompenses et prix:</span></h4>
+				<h4>Awards &amp; Prizes:</h4>
 				<?php the_field('awards_and_prizes'); ?>
 
 
 
-				<h4><span class="en">Racer List:</span> <span class="fr">Liste Racer:</span></h4>
+				<h4>Racer List:</h4>
 				<?php if( get_field('racer_list') ): ?>
 					<a href="<?php the_field('racer_list'); ?>" target="_blank" >View Racer List</a>
 				<?php endif; ?>
 
 
 
-		<h4><span class="en">Race Maps</span> <span class="fr">Cartes de course</span></h4>
+		<h4>Race Maps</h4>
 
 			<?php if( get_field('enduro_course_map') ):
 			?><a href="<?php the_field('enduro_course_map'); ?>" >Enduro Course Map</a>
@@ -196,18 +196,18 @@ Template Name: Events
 
 
 
-	<h4><span class="en">Registration Deadline and Fee:</span> <span class="fr">Date limite d'inscription et frais:</span></h4>
+	<h4>Registration Deadline and Fee:</h4>
 	<?php the_field('registration_deadline'); ?>
 
 
 
-	<h4><span class="en">Early Bird Deadline and Fees</span> <span class="fr">Les frais de preinscription et frais:</span></h4>
+	<h4>Early Bird Deadline and Fees</h4>
 	<?php the_field('early_bird_deadline'); ?>
 
 
 
-	<h4><span class="en">Registration: </span><span class="fr">Inscription:</span></h4>
-	<a href="<?php the_field('registration_link'); ?>" class="register-btn" target='_blank'><i class='icon-user'></i> <span class="en">Register Now </span><span class="fr">Inscrivez-vous maintenant</span></a>
+	<h4>Registration:</h4>
+	<a href="<?php the_field('registration_link'); ?>" class="register-btn" target='_blank'><i class='icon-user'></i> Register Now</a>
 
 
 

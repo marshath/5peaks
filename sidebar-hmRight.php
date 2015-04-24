@@ -9,7 +9,7 @@
 		<?php endif; ?>
 	</div>
 
-	<h3 style="margin-top:1em;"><span class="en">Latest From The Blog</span><span class="fr">Dernieres nouvelles du blog</span></h3>
+	<h3 style="margin-top:1em;">Latest From The Blog</h3>
 
 	<?php
 

@@ -23,8 +23,8 @@ $EM_Category = em_get_category($taxonomy->term_id);
   <?php
 //list terms in a given taxonomy using wp_list_categories (also useful as a widget if using a PHP Code plugin)
 
-  $taxonomy     = 'event';
-  $orderby      = 'name';
+$taxonomy     = 'event';
+$orderby      = 'name';
 $show_count   = 0;      // 1 for yes, 0 for no
 $pad_counts   = 0;      // 1 for yes, 0 for no
 $hierarchical = 1;      // 1 for yes, 0 for no
