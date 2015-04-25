@@ -1135,8 +1135,11 @@ footer .social-bar-top li a {
 		padding-left: 0px;
 	}
 }
-.events-hm h1 {
-	border-bottom:2px solid #999;
+.events-hm {
+	padding-right:3%;
+	h1 {
+		border-bottom:2px solid #999;
+	}
 }
 .posted-on { 
 	float: left; 
